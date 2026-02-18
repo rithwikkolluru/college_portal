@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="page-title">Contact Us</h1>
+
+<div class="card">
+    <h3>Faculty Emails</h3>
+    <ul>
+        {% for f in faculty %}
+        <li>{{ f.name }} - {{ f.email }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="card">
+    <p>For general queries: info@collegeportal.com</p>
+    <p>Phone: +91 9876543210</p>
+</div>
+
+{% endblock %}

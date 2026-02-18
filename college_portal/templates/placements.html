@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="page-title">Placement Records</h1>
+
+<div class="grid">
+    {% for p in placements %}
+    <div class="card">
+        <h3>Year: {{ p.year }}</h3>
+        <p><strong>Placement Percentage:</strong> {{ p.percentage }}%</p>
+        <p>{{ p.description }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

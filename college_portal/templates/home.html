@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 class="page-title">Welcome to Our College</h1>
+<p class="intro">
+    We provide high quality education with experienced faculty,
+    industry-oriented courses, and strong placement support.
+</p>
+
+<div class="grid">
+
+    <div class="card">
+        <h2>Faculty Overview</h2>
+        <p>Experienced professors with strong academic background.</p>
+        <a href="/faculty/" class="btn">View Faculty</a>
+    </div>
+
+    <div class="card">
+        <h2>Courses Offered</h2>
+        <p>Industry-relevant courses with excellent ratings.</p>
+        <a href="/courses/" class="btn">Explore Courses</a>
+    </div>
+
+    <div class="card">
+        <h2>Placement Support</h2>
+        <p>Strong placement record with top recruiters.</p>
+        <a href="/placements/" class="btn">View Placements</a>
+    </div>
+
+</div>
+
+{% endblock %}
