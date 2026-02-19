@@ -41,17 +41,30 @@ The College Portal is designed to provide:
 ```
 college_portal/
 │
-├── college_portal/      # Project settings
-├── main/                # Main application
+├── college_portal/
+│   ├── settings.py
+│   ├── urls.py
+│
+├── main/
 │   ├── models.py
 │   ├── views.py
-│   ├── forms.py
 │   ├── urls.py
-│   └── templates/
+│   ├── forms.py
+│   ├── admin.py
 │
-├── manage.py
-├── requirements.txt
-└── README.md
+├── templates/
+│   ├── base.html
+│   ├── home.html
+│   ├── faculty.html
+│   ├── courses.html
+│   ├── placements.html
+│   ├── contact.html
+│   ├── signup.html
+│   ├── login.html
+│   └── dashboard.html
+│
+└── manage.py
+
 ```
 
 ---
