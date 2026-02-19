@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Student Login</h2>
+
+{% if error %}
+<div class="alert alert-danger">{{ error }}</div>
+{% endif %}
+
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" name="username" class="form-control mb-3" placeholder="Username">
+    <input type="password" name="password" class="form-control mb-3" placeholder="Password">
+    <button class="btn btn-primary">Login</button>
+</form>
+
+{% endblock %}
